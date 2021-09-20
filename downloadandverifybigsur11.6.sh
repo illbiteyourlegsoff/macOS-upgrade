@@ -7,7 +7,7 @@ curl -O http://swcdn.apple.com/content/downloads/57/38/071-97382-A_OEKYSXCO6D/97
 
 
 
-### 256 chksum 11.5.2
+### Verify checkSum to make sure legit download from Apple or/and fully downloaded 11.6
 chksm=6142d4200f415d1253c437bdfcc7911bfb568ed16de1f0350bbc76299940647a
 echo $chksm
 
