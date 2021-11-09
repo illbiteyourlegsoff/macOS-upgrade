@@ -4,12 +4,12 @@
 ### This will have to be updated everytime a new update comes out. The checksum and the install
 cd /tmp
 
-curl -O http://swcdn.apple.com/content/downloads/57/38/071-97382-A_OEKYSXCO6D/97vrhncortwd3i38zfogcscagmpwksdzce/InstallAssistant.pkg
+curl -O http://swcdn.apple.com/content/downloads/43/03/002-23589-A_JLC10H5DJX/7qxktjph49leko1s3jwaqdlh2b3uzyrlfv/InstallAssistant.pkg
 
 
 
 ### Verify checkSum to make sure legit download from Apple or/and fully downloaded 11.6
-chksm=6142d4200f415d1253c437bdfcc7911bfb568ed16de1f0350bbc76299940647a
+chksm=99c77e451667bb8309c0fac2696979410e2f6aad97d46e20c33054955ac64fa2
 echo $chksm
 
 verchk=`openssl dgst -sha256 /tmp/InstallAssistant.pkg | awk '{print $NF}'`
@@ -19,7 +19,6 @@ if [ $chksm == $verchk ]
 then
 cd /tmp
 
-#curl -O http://swcdn.apple.com/content/downloads/43/16/071-78704-A_U5B3K7DQY9/cj9xbdobsdoe67yq9e1w2x0cafwjk8ofkr/InstallAssistant.pkg
 
 installer -pkg /tmp/InstallAssistant.pkg -target /
 
