@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #####this will download the installer package and verify its checksum. This will add the installer to applications but not install it. I usually do that as a separate policy. 
+### This will have to be updated everytime a new update comes out. The checksum and the install
 cd /tmp
 
 curl -O http://swcdn.apple.com/content/downloads/57/38/071-97382-A_OEKYSXCO6D/97vrhncortwd3i38zfogcscagmpwksdzce/InstallAssistant.pkg
